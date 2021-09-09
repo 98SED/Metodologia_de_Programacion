@@ -1,16 +1,24 @@
-ssh -i nombrellave.pem usuario@servidor.com -o ServerAliveInterval=30
-chmod 600 nombrellave.pem
+ssh -i nombrellave.pem usuario@servidor.com -o ServerAliveInterval=30 -> Permite acceder al servidor desde la terminal de linux o macos
 
-gcc nombreprograma.c -o nombreprograma
-gcc nombreprograma.c -o nombreprograma -lm
+chmod 600 nombrellave.pem -> Modifica la visualización del archivo .pem, para que el servidor lo considere seguro
 
-./nombreprograma
 
-git init
-git status
-git remote add nombrecorto url
 
-git add archivo.extension
-git commit -m 'mensaje'
-git push -u nombrecorto main
+git init -> Inicializa git en la carpeta activa
+git status -> Muestra un informe de estado del repositorio
+git remote add nombrecorto url -> Crea atajos para realizar conexiones remotas a repositiorios de git
+
+git add archivo.extension -> Añade un archivo o directorio al sistema de versiones
+git commit -m 'mensaje' -> 
+git push -u nombrecorto main -> Envia archivos al repositorio deseado
+
+# C
+gcc nombreprograma.c -o nombreprograma -> Compila el programa en cuestión
+gcc nombreprograma.c -o nombreprograma -lm -> Compila un programa con  la libreria Math.h
+
+./nombreprograma -> Ejecuta un programa compilado
+
+M_PI -> Representa al número pi cuando se usa la libreria math.h
+pow(base, potencia) -> eleva cierta base a la potencia deseada
+
 
