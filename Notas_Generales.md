@@ -13,6 +13,8 @@ git commit -m 'mensaje' ->
 git push -u nombrecorto main -> Envia archivos al repositorio deseado
 
 # C
+
+nano -T 4 /path/to/file -> Permite establecer el número de espacio de una tabulación
 gcc nombreprograma.c -o nombreprograma -> Compila el programa en cuestión
 gcc nombreprograma.c -o nombreprograma -lm -> Compila un programa con  la libreria Math.h
 
