@@ -13,6 +13,7 @@
 // Declaración de funciones:
 void bienvenida();
 void imprimir_patron();
+void imprimir_patron2(int arg_i);
 
 
 int main()
@@ -50,20 +51,14 @@ void imprimir_patron()
 {
 
     // Declaración de variables:
-    int i = 10;
-    int j = 0;
+    int i = 0;
 
-    while(i > 0)
+    while(i < 10)
     {
 
-        printf("*");
-        i = i - 1;
-        while (j < 10)
-        {
-            printf("\n");
-            j = j + i;
-        }
-        
+        imprimir_patron2(i);
+        ++i;
+        printf("\n");
 
     }
 
@@ -72,3 +67,21 @@ void imprimir_patron()
     return;
 
 }
+
+void imprimir_patron2(int arg_i)
+{
+
+    int i = 10 - arg_i;  
+    
+    while(i > 0)
+    {
+
+        printf("*");
+        --i;
+
+    }
+
+    return;
+
+}
+
